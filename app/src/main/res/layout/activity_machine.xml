@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MachineActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_weight="4"
+            android:src="@drawable/ic_build_black_24dp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <View
+
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="?actionBarSize"
+
+            android:text="SELECT MACHINE"
+
+            android:textColor="@color/colorGray"
+
+            android:textSize="40sp"
+
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="250dp"
+            android:layout_height="61dp"
+
+            android:background="@drawable/spinnerstyle"
+
+            android:paddingStart="10dp"
+
+            android:paddingLeft="10dp"
+            android:spinnerMode="dropdown" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:text="select anyone machine"
+
+            android:textColor="@color/colorGray" />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+
+        android:layout_marginBottom="30dp"
+
+        android:gravity="center"
+
+        android:orientation="vertical"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+
+            android:text="load the machine " />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|left"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="28dp"
+
+                android:background="@drawable/buttonstyle"
+                android:onClick="load"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:text="Load"
+                />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/buttonstyle"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="next"
+                android:text="Next"
+
+
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
